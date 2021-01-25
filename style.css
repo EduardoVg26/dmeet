@@ -5,54 +5,117 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  background: #ff9966; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff5e62,
-    #ff9966
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff5e62,
-    #ff9966
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: "IBM Plex Serif", serif;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-nav {
-  background-color: #3f51b5;
+.container {
+  width: 90%;
+  max-width: 1100px;
 }
+
+.navbar {
+  background-color: #315599 !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 nav ul li {
-  padding: 20px;
+  padding: 0 20px;
+  margin-right: 5px;
+  background-color: #ffffff2a;
 }
 nav ul li:hover {
-  background-color: #315599;
+  background-color: #182477;
 }
 nav ul a {
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-size: 1.4rem;
 }
 
-/** Sencillo **/
+.logo {
+  margin-left: 100px;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
 
-.sencillo ul {
+/* Carrusel */
+
+.carousel-inner img {
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  font-size: 60px;
+  right: 50%;
+  top: 50px;
+  text-align: left;
+  z-index: 10;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.carousel-caption button {
+  position: absolute;
+  font-size: 20px;
+  padding: 12px 35px;
+  bottom: 60px;
+  left: 0%;
+}
+
+/* Conferencias Popolares */
+#populares {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
 }
 
-.sencillo ul li {
-  text-align: center;
+.evento {
+  display: absolute;
 }
 
-@media (min-width: 768px) {
-  .sencillo ul {
-    flex-direction: row;
-  }
+.evento img {
+  width: 90%;
+}
+
+.evento button {
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+button .btn {
+  padding: auto 40px !important;
+}
+
+.conferenciasPopulares {
+  padding: 80px;
+  background-color: rgb(241, 241, 241);
+}
+
+.talleresPopulares {
+  padding: 80px;
+}
+
+.eventos > h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes a {
+  color: #575757;
+  font-size: 2em;
+  margin-right: 20px;
 }
