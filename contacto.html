@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DMeet</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.1-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-light bg-faded d-flex flex-row">
+      <!-- Brand -->
+      <a class="navbar-brand logo" href="index.html">DMeet</a>
+      <!-- Links -->
+      <ul class="nav navbar-nav d-flex flex-row">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="img-contacto">
+      <img src="img/contacto.jpg" alt="" />
+      <div class="titulo">
+        <h2>Contáctanos</h2>
+      </div>
+    </div>
+
+    <section>
+      <div class="container contacto">
+        <div class="row">
+          <div class="col-md-6 offset-md-0">
+            <p><span>Teléfono:</span> 55 5555 5555</p>
+            <p><span>Correo:</span> contacto@dmeet.com</p>
+            <iframe
+              width="520"
+              height="400"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=aluminio%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+            <a href="http://maps-generator.com/es">Maps-Generator.com</a>
+            <script
+              type="text/javascript"
+              src="https://embedmaps.com/google-maps-authorization/script.js?id=1b32c66dac7ae32026866ab1fab6abd86541db78"
+            ></script>
+            <ul class="list-unstyled contacto-redes">
+              <li>
+                <a href="" id="facebook"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="" id="youtube"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="" id="instagram"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 offset-md-0">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="correo@dominio.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Número</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="55 1122 3344"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-secondary float-right btn-lg"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Redes Sociales</h5>
+
+            <ul class="list-unstyled redes">
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">DMeet</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Eventos</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Servicios</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Nosotros</a>
+              </li>
+              <li>
+                <a href="contacto.html" class="text-dark">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: #315599; color: #fff"
+      >
+        © 2020 Copyright: DMeet
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
