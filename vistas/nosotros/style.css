@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.navbar {
+  background-color: #315599 !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 0 20px;
+  margin-right: 5px;
+  background-color: #ffffff2a;
+}
+nav ul li:hover {
+  background-color: #182477;
+}
+nav ul a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.logo {
+  margin-left: 100px;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+#topo{
+  background-image:url(img/top.jpg);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: aliceblue;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#dere{
+  display: inline-block;
+  font-family: monospace;
+  padding-left: 10%;
+  padding-top: 5%;
+  text-shadow: 0.1em 0.1em 0.2em white;
+  padding-bottom: 5%;
+}
+#texm{
+  background-image: url(img/nos.jpg);
+  padding-top: 50%;
+  padding-bottom:50%;
+  box-shadow: 0.2em 0.2em 0.5em black ;
+}
+#izqu{
+  display: inline-block;
+  width: 45%;
+  padding-left: 15%;
+  text-align: justify;
+  vertical-align: middle;
+  padding-top: 1%;
+}
+#nos{
+  text-shadow: 0.1em 0.1em 0.5em black;
+}
+.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+#cartas{
+  padding-bottom: 5%;
+}
+
+.tarjeta-wrap{
+	margin: 5%;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 500px;
+	height: 550px;
+	background: #F29720;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+  width: 100%;
+  position: absolute -ms-page;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+  background: #4a85dd;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(img/mision.png);
+  background-size: cover;
+}
+
+.card2{
+	background-image: url(img/vision.png);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(img/valores.png);
+	background-size: cover;
+}
+
+/* Footer */
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes a {
+  color: #575757;
+  font-size: 2em;
+  margin-right: 20px;
+}
