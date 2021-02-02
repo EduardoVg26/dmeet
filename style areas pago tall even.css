@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.navbar {
+  background-color: #315599 !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 0 20px;
+  margin-right: 5px;
+  background-color: #ffffff2a;
+}
+nav ul li:hover {
+  background-color: #182477;
+}
+nav ul a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.logo {
+  margin-left: 100px;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+h1{
+  padding: 35px;
+}
+
+h3{
+  padding: 110px;
+}
+
+h4{
+  padding: 40px;
+}
+
+
+
+a:hover{
+    text-decoration: none;  
+}
+
+.bg-primary{ background-color: var(--primary) !important;}
+
+
+
+#slidebar-container{
+    min-height: 100vh;
+}
+
+#slidebar-container .til{
+    padding: .875rem 1.25rem;
+}
+
+#slidebar-container .menu{
+    width: 18rem;
+}
+
+/* Footer */
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes a {
+  color: #575757;
+  font-size: 2em;
+  margin-right: 20px;
+}
