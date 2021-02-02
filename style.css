@@ -17,8 +17,11 @@ section {
   max-width: 1100px;
 }
 
-.navbar {
+nav .navbar {
   background-color: #315599 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-brand {
