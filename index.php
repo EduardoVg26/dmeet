@@ -20,8 +20,8 @@
         <div class="carousel-caption">
           <h3>Administración</h3>
           <p>Aprende a llevar a tu equipo al éxito!</p>
-          <button type="button" class="btn btn-dark">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark">Ver
+          </button></a>
 
         </div>
       </div>
@@ -31,8 +31,8 @@
         <div class="carousel-caption">
           <h3>Programación</h3>
           <p>Crea tu primera página web con HTML, CSS y JavaScript!</p>
-          <button type="button" class="btn btn-dark">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark">Ver
+          </button></a>
         </div>
       </div>
 
@@ -41,8 +41,8 @@
         <div class="carousel-caption">
           <h3>Yoga</h3>
           <p>Clases de Yoga para principiantes!</p>
-          <button type="button" class="btn btn-dark">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark">Ver
+          </button></a>
         </div>
       </div>
 
@@ -69,24 +69,24 @@
 
       <div class="populares">
         <div class="evento"><a href="#"><img src="img/popular-1.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-2.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-3.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-4.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-5.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
       </div>
     </div>
@@ -99,24 +99,24 @@
 
       <div class="populares">
         <div class="evento"><a href="#"><img src="img/popular-3.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-5.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-2.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-1.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
         <div class="evento"><a href="#"><img src="img/popular-4.jpg" alt=""></a>
-          <button type="button" class="btn btn-dark col-6">Ver
-          </button>
+          <a href="Ventas_linea.php"><button type="button" class="btn btn-dark col-6">Ver
+          </button></a>
         </div>
       </div>
     </div>
