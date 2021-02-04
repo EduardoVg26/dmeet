@@ -23,7 +23,7 @@
           id="gmap_canvas"
           src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=aluminio%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
-        <a href="http://maps-generator.com/es">Maps-Generator.com</a>
+        <a href="http://maps-generator.com/es" style="color: #fff;">Maps-Generator.com</a>
         <script
           type="text/javascript"
           src="https://embedmaps.com/google-maps-authorization/script.js?id=1b32c66dac7ae32026866ab1fab6abd86541db78"

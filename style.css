@@ -20,9 +20,9 @@ section {
 
 .navbar {
   background-color: #315599 !important;
-  display: flex;
-  align-items: center;
   width: 100%;
+  display: flex !important;
+  justify-content: space-around;
 }
 
 .navbar-brand {
@@ -42,8 +42,8 @@ nav ul li {
 nav ul li:hover {
   background-color: #182477;
 }
+
 nav ul a {
-  color: white !important;
   text-decoration: none;
   font-size: 1.4rem;
 }
@@ -79,7 +79,7 @@ nav ul a {
 }
 
 /* Conferencias Popolares */
-#populares {
+.populares {
   display: flex;
   justify-content: space-between;
 }
@@ -333,5 +333,40 @@ footer {
 
 .totalPago {
   margin-top: 80px;
-  padding: auto 20% auto 20%;
+}
+
+#dineroTotal {
+  width: 100%;
+}
+#dineroTotal p {
+  font-size: 50px;
+}
+
+#dineroTotal button {
+  margin-top: 25px;
+}
+
+/* Ventas en linea */
+#centro {
+  margin: 90px;
+}
+#mapa {
+  padding-top: 80px;
+  padding-left: 50px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+#segun {
+  display: table-cell;
+  padding-left: 0px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+  text-align: justify;
+}
+#totalVentaEnLinea {
+  padding-bottom: 30px;
+}
+
+.vistaPresencial {
+  margin: 50px auto;
 }

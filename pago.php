@@ -1,6 +1,12 @@
 <!-- Linea para poner header -->
 <?php include_once 'includes/templates/header.php'; ?>
-
+<?php
+  $mensajeSesion = '';
+  if(!$_SESSION['user_id']){
+    header('Location: registroUsuario.php');
+    $mensajeSesion = 'Por favor inicia sesión para poder comprar.';
+  }
+?>
   <div class="contenedorPago">
     <div class="row  text-center">
         <div class="col-sm"><h2>Datos personales y producto</h2></div>
@@ -9,31 +15,23 @@
     </div>
     <div class="row">
         <div class="col-sm datosUsuarioPago">
-          <div class="row g-3 ">
-            <div class="col-auto">
-              <p>Nombre</p>
-            </div>
-            <div class="w-100 d-none d-md-block"></div>
-            <div class="col-auto text-center">
-              <p class="datosPago">Nombre Usuario</p>
-            </div>
-          </div>
+
           <div class="row g-3">
             <div class="col-auto">
               <p>Correo</p>
             </div>
             <div class="w-100 d-none d-md-block"></div>
             <div class="col-auto text-center">
-              <p class="datosPago">Correo Registrado</p>
+              <p class="datosPago"><?= $user['email']?></p>
             </div>
           </div>
           <div class="row g-3">
             <div class="col-auto">
-              <p>Nombre del producto</p>
+              <p>Nombre del evento</p>
             </div>
             <div class="w-100 d-none d-md-block"></div>
             <div class="col-auto text-center">
-              <p class="datosPago">Evento Comprado</p>
+              <p class="datosPago">Emprendimiento en jovenes</p>
             </div>
           </div>
         </div>
@@ -94,17 +92,18 @@
         <div class="col-sm totalPago">
           <div class="row g-3 align-items-center">
             <div class="col-auto">
-              <p>Costo</p>
+              <p>Total a pagar:</p>
             </div>
-            <div class="col-auto">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            <div class="w-100 d-none d-md-block"></div>
+            <div class="col-auto text-center" id="dineroTotal">
+              <p >$1099</p>
             </div>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" type="button" id="pagar" onclick="randomPago();" >Pagar</button>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary btn-lg btn-block" type="button" id="pagar" onclick="randomPago();" >Pagar</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
 

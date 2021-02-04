@@ -38,17 +38,18 @@ if (!isset($_SESSION)) {
     <script src="js/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
   <link rel="stylesheet" href="style.css" />
+
 </head>
  
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-light bg-faded d-flex flex-row">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-faded">
     <!-- Brand -->
     <a class="navbar-brand logo" href="index.php">DMeet</a>
     <!-- Links -->
     <ul class="nav navbar-nav d-flex flex-row">
-      <li class="nav-item">
-        <a class="nav-link" href="eventos.html">Eventos</a>
+      <li class="nav-item ">
+        <a class="nav-link" href="eventos.php">Eventos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="servicios.html">Servicios</a>
@@ -59,18 +60,22 @@ if (!isset($_SESSION)) {
       <li class="nav-item">
         <a class="nav-link" href="contacto.php">Contacto</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item dropdown">
         <?php if (!empty($user)): ?>
-            <a href="logout.php">
-              <span id="sesion" style="font-size: .8rem;">Cerrar Sesión</span>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user"></i>
             </a>
-
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="perfilUser.php">Perfil</a>
+              <a class="dropdown-item" href="logout.php">Cerrar Sesión</a>
+            </div>
         <?php else: ?>
-          <a href="registroUsuario.php" class="nav-link">
-            <span id="sesion" style="font-size: .8rem;">Iniciar Sesión</span>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user"></i>
           </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="registroUsuario.php">Iniciar Sesión</a>
+          </div>
         <?php endif; ?>
       </li>
     </ul>

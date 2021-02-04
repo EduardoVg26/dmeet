@@ -45,23 +45,24 @@ nav ul a {
   font-family: "Oswald", sans-serif;
   font-size: 60px;
 }
-#centro{
-margin: 90px;
+
+#centro {
+  margin: 90px;
 }
-#mapa{
+#mapa {
   padding-top: 80px;
   padding-left: 50px;
   display: table-cell;
   vertical-align: bottom;
 }
-#segun{
+#segun {
   display: table-cell;
   padding-left: 0px;
   padding-bottom: 50px;
   padding-top: 60px;
   text-align: justify;
 }
-h2{
+#totalVentaEnLinea {
   padding-bottom: 30px;
 }
 
@@ -77,4 +78,3 @@ h2{
   font-size: 2em;
   margin-right: 20px;
 }
-

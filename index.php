@@ -67,7 +67,7 @@
     <div class="eventos ">
       <h3>Conferencias más populares</h3>
 
-      <div id="populares">
+      <div class="populares">
         <div class="evento"><a href="#"><img src="img/popular-1.jpg" alt=""></a>
           <button type="button" class="btn btn-dark col-6">Ver
           </button>
@@ -97,7 +97,7 @@
     <div class="eventos">
       <h3>Talleres más populares</h3>
 
-      <div id="populares">
+      <div class="populares">
         <div class="evento"><a href="#"><img src="img/popular-3.jpg" alt=""></a>
           <button type="button" class="btn btn-dark col-6">Ver
           </button>

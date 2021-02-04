@@ -81,7 +81,7 @@
 <!-- Linea para poner header -->
 <?php include_once 'includes/templates/header.php'; ?>
 
-	<div class="container">
+	<div class="container" style="margin: 50px auto;">
 		<div class="row align-items-center">
 			<div class="col">
 				<!--Formulario Registro-->
@@ -160,6 +160,10 @@
 				  </div>
 				  <?php if (!empty($messageSession)) : ?>
 						<p><?= $messageSession ?></p>
+					<?php endif; ?>
+					
+					<?php if (!empty($mensajeSesion)) : ?>
+						<p><?= $mensajeSesion ?></p>
 					<?php endif; ?>
 				</form>
 			</div>
