@@ -10,16 +10,16 @@
 
             <ul class="list-unstyled redes">
               <li>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -81,5 +81,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+   box-sizing: border-box;
+   margin: 0;
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+.container {
+    width: 90%;
+    max-width: 1100px;
+  }
+  
+
+.navbar {
+    background-color: #315599 !important;
+  }
+  
+.navbar-brand {
+    color: #fff !important;
+  }
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+nav ul li {
+    padding: 0 20px;
+    margin-right: 5px;
+    background-color: #ffffff2a;
+  }
+nav ul li:hover {
+    background-color: #182477;
+  }
+nav ul a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+.logo {
+    margin-left: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+  }
+#imagen{
+    margin: 7%;
+    margin-top: 0%;  
+    margin-bottom: 0%; 
+    background-image:url(img/imagen.jpg);
+}
+.colum{
+    display: table-cell;
+    padding-top: 10%;
+    padding-left:12% ;
+    color: azure;
+}
+.column{
+    display: table-cell;
+    padding-top: 10%;
+    color: azure;
+    padding-left: 450px;
+    padding-bottom: 250px;
+    
+}
+#lista{
+    padding-top: 8%;
+    padding-left: 6%;
+    padding-bottom: 5%;
+}
+#titu{
+    padding-left: 10%;
+}
+.lista2{
+    padding-top:8%;
+}
+#titu2{
+    padding-right: 5%;
+}
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes a {
+  color: #575757;
+  font-size: 2em;
+  margin-right: 20px;
+}

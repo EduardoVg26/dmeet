@@ -5,6 +5,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -17,11 +18,11 @@ section {
   max-width: 1100px;
 }
 
-nav .navbar {
+.navbar {
   background-color: #315599 !important;
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -240,6 +241,12 @@ h6 {
   margin-right: 20px;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
 /*Contacto */
 
 #img-contacto {
@@ -294,4 +301,37 @@ h6 {
 
 #instagram {
   color: rgb(211, 86, 14);
+}
+
+/* Login de Empleados */
+
+#img-empleados {
+  background-image: url(img/empleados2.jpg);
+  width: 100%;
+  min-height: 1100px;
+}
+
+.loginEmpleado {
+  padding: 25% auto !important;
+  color: #fff;
+  margin: 25% auto;
+}
+
+/* Vista de pago */
+.contenedorPago {
+  margin: 5%;
+}
+
+.datosPago {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.datosUsuarioPago {
+  margin-top: 50px;
+}
+
+.totalPago {
+  margin-top: 80px;
+  padding: auto 20% auto 20%;
 }

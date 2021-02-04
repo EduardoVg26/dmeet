@@ -3,12 +3,14 @@
 
     $message = '';
 
-    if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['nombre']) && !empty($_POST['localidad']) && !empty($_POST['telefono']) && !empty($_POST['ocupacion'])) {
-        $sql = "INSERT INTO usuario (nombre, email, password, localidad, telefono, ocupacion) VALUES (:nombre, :email, :password, :localidad, :telefono, :ocupacion)";
+    if (!empty($_POST['emailSignup']) && !empty($_POST['passwordSignup']) && !empty($_POST['nombre']) && !empty($_POST['localidad']) && !empty($_POST['telefono']) && !empty($_POST['ocupacion'])) {
+		$sql = "INSERT INTO usuario (nombre, email, password, localidad, telefono, ocupacion) VALUES (:nombre, :email, :password, :localidad, :telefono, :ocupacion)";
 		$stmt = $conn->prepare($sql);	
+
 		$stmt->bindParam(':nombre',$_POST['nombre']);
-        $stmt->bindParam(':email',$_POST['email']);
-		$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+		$stmt->bindParam(':email',$_POST['emailSignup']);
+		// $password = password_hash($_POST['passwordSignup'], PASSWORD_BCRYPT);
+		$password = crypt($_POST['passwordSignup'], '$2a$07$7sd3164587A12489dmeetd8f8$');
 		$stmt->bindParam(':password',$password);
 		$stmt->bindParam(':localidad',$_POST['localidad']);
         $stmt->bindParam(':telefono',$_POST['telefono']);
@@ -17,12 +19,63 @@
         if ($stmt->execute()) {
             $message = 'Usuario creado correctamente.';
         }else {
-            $message = 'Lo siento, ha ocurrido un error creando la contraseña.';
+            $message = 'Lo siento, ha ocurrido un error creando el usuario.';
         }
-    }
+	}
+	
 ?> 
+
 <?php
-	require 'login.php';
+  session_start();
+
+  if(isset($_SESSION['user_id'])){
+    header('Location: /dmeet');
+  }
+
+  require 'database.php';
+
+  if(!empty($_POST['emailSession']) && !empty($_POST['passwordSession'])){
+    $records = $conn->prepare('SELECT id, email, password FROM usuario WHERE email=:emailSession');
+    $records->bindParam(':emailSession', $_POST['emailSession']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+	// print_r($results);
+	$messageSession = '';
+	
+	// print_r($results);
+
+	if (is_array($results)) {
+
+		// echo 'Es un array';
+
+		$password = crypt($_POST['passwordSession'], '$2a$07$7sd3164587A12489dmeetd8f8$');
+
+		// var_dump($results);
+		// echo $password;
+
+		if ($password == $results['password']) {
+
+			$_SESSION['user_id'] = $results['id'];
+			header('Location: /dmeet');
+
+		} else {
+			$messageSession = 'Lo siento, los datos son incorrectos.';
+		}
+
+	} else {
+
+		$messageSession = 'Lo siento, los datos son incorrectos.';
+
+	}
+
+    // if(count($results) > 0 && password_verify($_POST['passwordSession'], $results['password'])){
+    //   $_SESSION['user_id'] = $results['id'];
+    //   header('Location: /dmeet');
+    // } else {
+    //   $messageSession = 'Lo siento, los datos son incorrectos.';
+    // }
+  }
+
 ?>
 
 <!-- Linea para poner header -->
@@ -56,11 +109,11 @@
 				  	</div>
 					  <div class="mb-1">
 				    	<label for="CorreoElectronico" class="form-label"></label>
-				    	<input type="email" id="email" name="email" class="form-control" placeholder="Correo Electrónico">
+				    	<input type="email" id="email" name="emailSignup" class="form-control" placeholder="Correo Electrónico">
 				  	</div>
 				  	<div class="mb-1">
 				    	<label for="InputPassword" class="form-label"></label>
-				    	<input type="password" name="password" class="form-control" id="InputPassword" placeholder="Contraseña">
+				    	<input type="password" name="passwordSignup" class="form-control" id="InputPassword" placeholder="Contraseña">
 				  	</div>
 
 				  	<div class="mb-1">
@@ -91,15 +144,16 @@
 
 			<div class="col">
 				<!--Formulario de Inicio de Sesión-->
+				<?#php require 'partials/header.php' ?>
 				<h3>Inicia Sesión</h3>
 				<form action="registroUsuario.php" method="post">
 				  <div class="mb-3">
 				    <label for="InputEmail" class="form-label">Correo Electronico</label>
-				    <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+				    <input name="emailSession" type="email" class="form-control" aria-describedby="emailHelp">
 				  </div>
 				  <div class="mb-3">
 				    <label for="Password" class="form-label">Contraseña</label>
-				    <input name="password" type="password" class="form-control" id="Password">
+				    <input name="passwordSession" type="password" class="form-control">
 				  </div>
 				  <div align="right">
 				  	<button type="submit" class="btn btn-primary">Ingresar</button>

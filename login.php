@@ -1,28 +1,28 @@
 <?php
 
-    session_start();
+$usuario = $_POST['usuario'];
+$contrasena = $_POST['contrasena'];
 
-    if (isset($_SESSION['user_id'])) {
-        header('Location: /dmeet');
-        # code...
-    }
+session_start();
+$_SESSION['usuario'] = $usuario;
 
-    require 'database.php';
+include ('database.php');
 
-    if (!empty($_POST['emailSession']) && !empty($_POST['passwordSession'])){
-        $records = $conn->prepare('SELECT id, email, password FROM usuario Where email=:emailSession');
-        $records->bindParam(':emailSession', $_POST['emailSession']);
-        $records->execute();
-        $results = $records->fetch(PDO::FETCH_ASSOC);
+$consulta = "SELECT * FROM usuarios WHERE correo='$usuario' and contrasena = '$contrasena'";
 
-        $messageSession = '';
+$resultado = mysqli_query($conexion, $consulta);
 
-        if (count($results) > 0 && password_verify($_POST['passwordSession'], $results['password'])) {
-            $_SESSION['user_id'] = $results['id'];
-            header('Location: /dmeet');
-        } else{
-            $messageSession = 'Lo sentimos, tus datos no coinciden';
-        }
-    }
+$filas = mysqli_num_rows($resultado);
 
-?>
+if($filas){
+    header('Location: index.php');
+} else {
+    ?>
+    <?php
+    include("sesion.php");
+    ?>
+    <h1>error en la autenticacion</h1>
+    <?php
+}
+mysqli_free_result($resultado);
+mysqli_close($conexion);
